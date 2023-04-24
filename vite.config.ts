@@ -15,6 +15,7 @@ export default defineConfig({
         "./Header": "./src/components/Header/Header.tsx",
         "./Footer": "./src/components/Footer/Footer.tsx",
         "./products": "./src/services/products.ts",
+        "./MainLayout": "./src/MainLayout.tsx",
       },
       shared: ["react", "react-dom", "react-router-dom"],
     }),
