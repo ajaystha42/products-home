@@ -12,9 +12,9 @@ export default defineConfig({
         pdp: "http://localhost:3001/assets/remoteEntry.js",
       },
       exposes: {
-        "./Header": "./src/Header.tsx",
-        "./Footer": "./src/Footer.tsx",
-        "./products": "./src/products.ts",
+        "./Header": "./src/components/Header/Header.tsx",
+        "./Footer": "./src/components/Footer/Footer.tsx",
+        "./products": "./src/services/products.ts",
       },
       shared: ["react", "react-dom", "react-router-dom"],
     }),
