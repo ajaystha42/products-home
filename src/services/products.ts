@@ -1,4 +1,4 @@
-const API_SERVER = "http://localhost:8080";
+const API_SERVER = import.meta.env.VITE_API_URL;
 
 export const getProducts = () =>
   fetch(`${API_SERVER}/products`).then((res) => res.json());
