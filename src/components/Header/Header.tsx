@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import MiniCart from "cart/MiniCart";
+import Login from "cart/Login";
 export default function Header() {
   return (
     <div className="p-5 bg-red-500 text-white text-3xl font-bold px-50">
@@ -10,7 +12,10 @@ export default function Header() {
           <div className="mx-5">|</div>
           <Link to="/cart">Cart</Link>
         </div>
-        <div className="flex-end relative"></div>
+        <div className="flex-end relative">
+          <MiniCart />
+          <Login />
+        </div>
       </div>
     </div>
   );
