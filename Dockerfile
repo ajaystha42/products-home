@@ -14,5 +14,5 @@ RUN pnpm build
 
 EXPOSE 3000
 
-CMD ["pnpm" ,"serve"]
+CMD ["pnpm", "serve", "--host", "0.0.0.0"]
 
