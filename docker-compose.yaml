@@ -7,7 +7,7 @@ services:
       - .:/home
     ports:
       - 3000:3000
-    image: app:products_home
+    image: products_home:1.0
     container_name: products_home
     command: pnpm serve --host 0.0.0.0
 
